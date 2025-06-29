@@ -1,0 +1,334 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3f51b5;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px; /* Space for navbar */
+  color: white;
+  text-align: center;
+}
+
+/* Background Video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Dark overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 1rem 2rem;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+.btn {
+  background-color: #ff9933;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #e87c12;
+}
+
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Destination Section */
+.destination-section {
+  padding: 2rem;
+  background-color: #fafafa;
+}
+
+/* Grid */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+/* Destination Card */
+.destination-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+.destination-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.destination-card h2 {
+  font-size: 1.5rem;
+  margin: 0.75rem;
+  color: #3f51b5;
+}
+.destination-card p {
+  padding: 0 0.75rem 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Forts Section */
+.forts-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  margin-top: 80px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.forts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+/* Fort Card Styling */
+.fort-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.fort-card:hover {
+  transform: translateY(-5px);
+}
+.fort-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.fort-card h2 {
+  font-size: 1.4rem;
+  margin: 0.75rem;
+  color: #3f51b5;
+}
+.fort-card p {
+  padding: 0 0.75rem 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Optional responsive tweak */
+@media (max-width: 600px) {
+  .forts-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
+
+/* ================= CULTURE PAGE ================= */
+.culture-section {
+  padding: 2rem;
+  background-color: #fdfdfd;
+  margin-top: 80px;
+}
+
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.culture-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.culture-card:hover {
+  transform: translateY(-6px);
+}
+.culture-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.culture-card h2 {
+  font-size: 1.4rem;
+  margin: 0.75rem;
+  color: #3f51b5;
+}
+.culture-card p {
+  padding: 0 0.75rem 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Mobile tweak */
+@media (max-width: 600px) {
+  .culture-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
+
+/* ======= CONTACT PAGE ======= */
+.contact-section {
+  padding: 2rem;
+  margin-top: 80px;
+  background-color: #f9f9f9;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 2rem;
+  justify-content: space-between;
+}
+
+.contact-form, .contact-info {
+  flex: 1 1 350px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3f51b5;
+}
+
+.contact-info h3 {
+  margin-bottom: 1rem;
+  color: #3f51b5;
+}
+
+.contact-info p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
