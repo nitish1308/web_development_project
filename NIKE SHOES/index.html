@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike | Just Do It</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">Nike</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="toggle-theme" onclick="toggleDarkMode()">
+      <i class="fas fa-moon"></i>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <video autoplay muted loop class="bg-video">
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      
+      <h1>Unleash Your Game</h1>
+      <p>Performance. Style. Power.</p>
+      <a href="#collection" class="btn">Explore Shoes</a>
+    </div>
+  </header>
+
+  <!-- Search & Filter -->
+  <section class="filter-bar">
+    <input type="text" id="searchInput" placeholder="Search shoes..." onkeyup="filterProducts()" />
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="all">All</option>
+      <option value="low">Low</option>
+      <option value="mid">Mid</option>
+      <option value="toddler">Toddler</option>
+    </select>
+  </section>
+
+  <!-- Product Collection -->
+  <section id="collection" class="products">
+    <h2>Nike Shoe Collection</h2>
+    <div class="product-grid" id="productGrid">
+      <div class="card" data-name="University Blue" data-category="mid">
+        <img src="images/shoe1.jpg" alt="University Blue" />
+        <h3>Air Jordan 1 - University Blue</h3>
+        <p>$170.00</p>
+        <button onclick="buyNow('Air Jordan 1 - University Blue')">Buy Now</button>
+      </div>
+      <div class="card" data-name="Shadow 2.0" data-category="mid">
+        <img src="images/shoe2.jpg" alt="Shadow 2.0" />
+        <h3>Air Jordan 1 - Shadow 2.0</h3>
+        <p>$160.00</p>
+        <button onclick="buyNow('Air Jordan 1 - Shadow 2.0')">Buy Now</button>
+      </div>
+      <div class="card" data-name="Royal Black" data-category="low">
+        <img src="images/shoe3.jpg" alt="Royal Black" />
+        <h3>Jordan 1 Low - Royal Black</h3>
+        <p>$120.00</p>
+        <button onclick="buyNow('Jordan 1 Low - Royal Black')">Buy Now</button>
+      </div>
+      <div class="card" data-name="Crimson Tint" data-category="low">
+        <img src="images/shoe4.jpg" alt="Crimson Tint" />
+        <h3>Jordan 1 Low - Crimson Tint</h3>
+        <p>$110.00</p>
+        <button onclick="buyNow('Jordan 1 Low - Crimson Tint')">Buy Now</button>
+      </div>
+      <div class="card" data-name="UNC Low" data-category="low">
+        <img src="images/shoe5.jpg" alt="UNC Low" />
+        <h3>Jordan 1 Low - UNC</h3>
+        <p>$120.00</p>
+        <button onclick="buyNow('Jordan 1 Low - UNC')">Buy Now</button>
+      </div>
+      <div class="card" data-name="Purple Toddler" data-category="toddler">
+        <img src="images/shoe6.jpg" alt="Purple Toddler" />
+        <h3>Jordan Toddler - Purple</h3>
+        <p>$65.00</p>
+        <button onclick="buyNow('Jordan Toddler - Purple')">Buy Now</button>
+      </div>
+      <div class="card" data-name="Triple White" data-category="mid">
+        <img src="images/shoe7.jpg" alt="Triple White" />
+        <h3>Jordan 1 Mid - Triple White</h3>
+        <p>$140.00</p>
+        <button onclick="buyNow('Jordan 1 Mid - Triple White')">Buy Now</button>
+      </div>
+      <div class="card" data-name="Panda" data-category="mid">
+        <img src="images/shoe8.jpg" alt="Panda" />
+        <h3>Jordan 1 Mid - Panda</h3>
+        <p>$135.00</p>
+        <button onclick="buyNow('Jordan 1 Mid - Panda')">Buy Now</button>
+      </div>
+      <div class="card" data-name="Gold Toe" data-category="mid">
+        <img src="images/shoe9.jpg" alt="Gold Toe" />
+        <h3>Jordan 1 Mid - Gold Toe</h3>
+        <p>$150.00</p>
+        <button onclick="buyNow('Jordan 1 Mid - Gold Toe')">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Join Our Newsletter</h2>
+    <p>Get 10% off your first order!</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>Why Nike?</h2>
+    <p>Nike is driven by innovation and inspired by performance. Whether you're on the court, track, or street — we design for the athlete in you. Just Do It.</p>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="reviews">
+    <h2>What Customers Say</h2>
+    <div class="review-card">"Best Jordans I've ever owned!" - Rahul, Mumbai</div>
+    <div class="review-card">"Perfect fit and amazing style." - Sarah, Delhi</div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:youremail@example.com">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nike Inc. | Follow us on
+      <a href="#">Instagram</a>, <a href="#">Facebook</a>, <a href="#">Twitter</a>
+    </p>
+    <button class="scroll-top" onclick="scrollToTop()">⬆</button>
+  </footer>
+
+  <!-- Modal -->
+  <div id="buyModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script>
+    function filterProducts() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const category = document.getElementById("categoryFilter").value;
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        const name = card.getAttribute("data-name").toLowerCase();
+        const cat = card.getAttribute("data-category");
+
+        if ((name.includes(input) || input === "") && (category === "all" || category === cat)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+
+    function buyNow(name) {
+      document.getElementById("modalText").innerText = `${name} added to cart!`;
+      document.getElementById("buyModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("buyModal").style.display = "none";
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
