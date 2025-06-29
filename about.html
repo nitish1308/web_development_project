@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>About Us</h1>
+    </section>
+    
+    
+<!------- about us content -------->
+    
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>"Empowering Your Success: Your Path to Competitive Exam Excellence!"</h1>     
+            <p>Welcome to our coaching classes, your premier destination for comprehensive preparation for competitive exams such as CAT, MAT, XAT, SNAP, and more. Our mission is to provide students with the skills, knowledge, and confidence needed to excel in these challenging exams and reach their full potential.
+
+                At our coaching center, we believe in personalized learning tailored to each student's unique needs. Our experienced and dedicated instructors guide you through every step of the preparation process, offering expert insights, strategies, and support. We keep you updated with the latest exam patterns and trends, ensuring you have the tools to succeed.</p>
+                <h1>Why Choose Us?</h1>
+                <p> 
+                    <br>1.<b>Expert Faculty</b>: Learn from seasoned professionals who understand the intricacies of each exam and are committed to your success.
+
+                    <br>2.<b>Customized Study Plans</b>: Benefit from personalized plans that focus on your strengths and address your weaknesses for optimal performance.
+                    
+                    <br>3.<b>Comprehensive Study Materials</b>: Access a wealth of resources, including practice tests, sample papers, and reference guides, to master the syllabus.
+                    
+                    <br>4.<b>Interactive Learning Environment</b>: Engage in discussions and collaborative sessions that deepen your understanding and boost your confidence.
+                    
+                    <br>5.<b>Regular Assessments and Feedback</b>: Track your progress with regular assessments and receive constructive feedback to continuously improve.
+                    
+                    <br>6.<b>Doubt Clearing Sessions</b>: Resolve any queries or concerns in dedicated sessions with our approachable and knowledgeable instructors.
+                    
+                    <br>7.<b>Flexible Scheduling</b>: Choose from a variety of batch timings to fit your schedule, ensuring a seamless balance between your studies and other commitments.</p>
+            
+                    <br><br><a href="" class="hero-btn red-btn">EXPOLER NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/b2.jpg">
+        </div>
+    </div>    
+</section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>At our coaching center, we offer comprehensive and personalized coaching to cater to each student's unique needs and learning style.<br> Our team of experienced and dedicated instructors is committed to providing top-notch guidance and support throughout your journey. <br>They bring a wealth of knowledge and expertise to the table, ensuring that you receive the best possible education.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by Nitish Sawant</p>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    

@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Mentor & Founder of Institute</h1>
+    </section>
+    
+<!---------- Blog Page Content ---------->
+    
+    <section class="blog-content">
+    <div class="row">
+    <div class="blog-left">
+        <h2>Mr. A.G Dalvi. </h2>
+        
+        <p>Mr. A.G Dalvi is a distinguished figure in the realms of academia and professional development, boasting an illustrious career spanning over 11 years. Holding the esteemed title of Gold Medalist in Masters of Management Studies, from Mumbai University, his academic excellence sets a benchmark for aspiring scholars.</p>
+        <br>
+        <p>As a mentor for the UPSC (Union Public Service Commission) and MPSC (Maharashtra Public Service Commission) examinations, Mr. Dalvi has been instrumental in shaping the careers of numerous civil service aspirants, imparting invaluable guidance and expertise.</p>
+        <br>
+        <p>Mr. A.G Dalvi’s expertise extends to management entrance examinations such as MBA CAT, MAH CET, MAT, SNAP, etc. Through personalized coaching and tailored study plans, he has guided students to navigate the complexities of these exams and secure admission to reputed management institutions.</p>
+        <br>
+        <p>His academic achievements have been recognized through prestigious accolades such as the D K Basu Prize, Khachand Devachand Prize, The Jawaharlal Nehru Memorial Trust Scholarship, and National Award for educational Achievements, underscoring his outstanding contributions to education.</p>
+        <br>
+        <p>In pursuit of further academic enrichment, Mr. Dalvi is currently pursuing a Ph.D. from Pune University, demonstrating his steadfast commitment to advancing knowledge in his field. His scholarly endeavors extend beyond the classroom, with 16 research papers published in reputed journals and a book to his credit, showcasing his scholarly prowess and intellectual depth.</p>
+        <br>
+        <p>Moreover, Mr. Dalvi is certified by the International Institute of Business Analysis (IIBA) as a competent Business Analyst, highlighting his versatility and expertise in the corporate domain.</p>
+        <br>
+        <p>With a multifaceted repertoire encompassing academia, mentorship, research, and professional certifications, Mr. A.G Dalvi epitomizes excellence and continues to make significant strides in his quest for knowledge and societal impact.</p>
+        <br>
+
+
+        
+        <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            </form>
+        </div>
+    </div>
+        
+    
+    
+    </div>
+    </section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>At our coaching center, we offer comprehensive and personalized coaching to cater to each student's unique needs and learning style.<br> Our team of experienced and dedicated instructors is committed to providing top-notch guidance and support throughout your journey. <br>They bring a wealth of knowledge and expertise to the table, ensuring that you receive the best possible education.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>made with <i class="fa fa-heart-o"></i> by Nitish Sawant</p>
+</section> 
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    

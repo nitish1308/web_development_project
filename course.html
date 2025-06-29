@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Courses</h1>
+    </section>
+    
+    
+<!---------- course ----------->
+    
+<section class="course">
+    <h1>Courses We Offer </h1>
+    <p2><b>"Join us on your journey to success and unlock your potential for a bright future in management education!"</b></p2>
+    <div class="row">
+        <div class="course-col">
+            <h3>CAT</h3>
+            <p>The Common Admission Test (CAT) is an entrance exam for top business schools in India. It assesses candidates in verbal ability, quantitative aptitude, and logical reasoning. CAT is known for its competitiveness and is a gateway to prestigious MBA programs.</p>
+        </div>
+        <div class="course-col">
+            <h3>MBA CET</h3>
+            <p>The MBA Common Entrance Test (MBA CET) is a state-level entrance exam for admission to MBA programs in Maharashtra, India. It evaluates candidates on verbal ability, quantitative aptitude, and logical reasoning. Success in MBA CET leads to admission in top management institutes within the state.</p>
+        </div>
+        <div class="course-col">
+            <h3>SNAP</h3>
+            <p>The Symbiosis National Aptitude Test (SNAP) is a national-level entrance exam for admission to Symbiosis International University’s MBA programs. It assesses candidates in general English, quantitative aptitude, and analytical and logical reasoning. SNAP is a gateway to renowned business schools under the Symbiosis banner.</p>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="course-col">
+            <h3>XAT</h3>
+            <p>The Xavier Aptitude Test (XAT) is a national-level entrance exam conducted by XLRI for admission to top MBA programs across India. It evaluates candidates in verbal and quantitative ability, decision making, and general knowledge. XAT is known for its unique questions and challenging format, making it a gateway to top management schools.</p>
+        </div>
+        <div class="course-col">
+            <h3>MPSC & UPSC SERVICES</h3>
+            <p>The Maharashtra Public Service Commission (MPSC) and the Union Public Service Commission (UPSC) are prestigious government organizations in India. MPSC conducts exams for state-level administrative services, while UPSC conducts exams for central government positions like IAS and IPS. Both require rigorous preparation and assess candidates on a variety of subjects.</p>
+        </div>
+        <div class="course-col">
+            <h3>MAT</h3>
+            <p>The Management Aptitude Test (MAT) is a national-level entrance exam for MBA programs in India, conducted by AIMA. MAT assesses candidates in language comprehension, data analysis, mathematical skills, intelligence, and critical reasoning. Held four times a year, MAT is a gateway to various business schools across the country.</p>
+        </div>
+        
+    </div>
+</section>
+    
+<!---------- Facilities ---------->
+    
+<section class="facility">
+    <h1>Our Facilities</h1>
+    <p2><b>CAT Success Starts Here: Top Resources .</b></p2>
+        <div class="row">
+            <div class="facility-col">
+                <img src="images/c2.jpg">
+                <h3>Weekly Offline session </h3>
+                <p>Apply your knowledge through interactive exercises and receive personalized feedback during our weekly offline sessions.</p>
+            </div>
+            <div class="facility-col">
+                <img src="images/c1.jpg">
+                <h3>Sample Papers & important Material</h3>
+                <p>Familiarize yourself with the exam format and test your preparedness with our comprehensive sample papers.</p>
+            </div>
+            <div class="facility-col">
+                <img src="images/c3.jpeg">
+                <h3>Daily Doubt Solving session </h3>
+                <p>Never get stuck! Our daily doubt-solving sessions ensure you get the on going support you need.</p>
+            </div>
+        </div>
+</section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>At our coaching center, we offer comprehensive and personalized coaching to cater to each student's unique needs and learning style.<br> Our team of experienced and dedicated instructors is committed to providing top-notch guidance and support throughout your journey. <br>They bring a wealth of knowledge and expertise to the table, ensuring that you receive the best possible education.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>made with <i class="fa fa-heart-o"></i> by Nitish Sawant</p>
+</section> 
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    
